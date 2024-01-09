@@ -1,0 +1,15 @@
+<svg width="96" height="51" viewBox="0 0 96 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<path id="Polygon 1" d="M29.9999 0L30 51H0L29.9999 0Z" fill="#362FD9"/>
+<path id="Polygon 3" d="M69.9999 51L70 0L52 7.62939e-06L69.9999 51Z" fill="#362FD9"/>
+<g id="Mask group">
+<mask id="mask0_23_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="69" y="0" width="27" height="51">
+<rect id="Rectangle 230" width="25.5" height="51" transform="matrix(-1 0 0 1 95.4902 0)" fill="#362FD9"/>
+</mask>
+<g mask="url(#mask0_23_18)">
+<circle id="Ellipse 1" cx="69.9902" cy="25.5" r="25.5" fill="#362FD9"/>
+</g>
+</g>
+<rect id="Rectangle 231" x="36" width="10" height="51" fill="#362FD9"/>
+</g>
+</svg>
