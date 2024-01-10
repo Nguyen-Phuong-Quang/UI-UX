@@ -1,8 +1,8 @@
 <div class="flex">
   <div
-    class="w-full h-[92px] bg-white shadow flex items-center justify-between fixed t-0 r-0 l-0 z-10"
+    class="w-full h-[92px] bg-white shadow flex items-center justify-between fixed t-0 r-0 l-0 z-50"
   >
-    <div class="flex items-center pl-4 cursor-pointer">
+    <div class="flex items-center pl-4 cursor-pointer" (click)="goHome()">
       <img src="../../../assets/svg/Group_1.svg" alt="" class="p-4" />
       <div
         class="text-indigo-700 text-[52px] font-bold leading-[61px] tracking-tight h-full flex justify-center items-center"
@@ -32,57 +32,57 @@
       </div>
     </div>
   </div>
-  <div class="flex pt-[92px] w-screen">
-    <div class="w-1/4 bg-base h-screen px-12 pt-10">
+  <div class="flex pt-[92px] w-screen h-screen">
+    <div
+      class="w-[360px] bg-base px-12 pt-[136px] flex flex-col justify-between fixed top-0 left-0 bottom-0"
+    >
       <div class="flex flex-col gap-4">
-        <div
-          class="text-indigo-700 text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+        <a
+          class="text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+          [ngClass]="{
+            'text-indigo-700': checkLocation('my-projects'),
+            'text-slate-400': !checkLocation('my-projects')
+          }"
+          [routerLink]="['my-projects']"
         >
           My projects
-        </div>
-        <div
-          class="text-slate-400 text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+        </a>
+        <a
+          class="text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+          [ngClass]="{
+            'text-indigo-700': checkLocation('inspiration'),
+            'text-slate-400': !checkLocation('inspiration')
+          }"
+          [routerLink]="['inspiration']"
         >
           Inspiration
-        </div>
-        <div
-          class="text-slate-400 text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+        </a>
+        <a
+          class="text-[28px] font-medium leading-[43px] tracking-tight hover:bg-indigo-700 hover:text-white py-2 px-4 rounded-xl cursor-pointer"
+          [ngClass]="{
+            'text-indigo-700': checkLocation('provide-feedback'),
+            'text-slate-400': !checkLocation('provide-feedback')
+          }"
+          [routerLink]="['provide-feedback']"
         >
           Provide Feedback
-        </div>
+        </a>
       </div>
-    </div>
-    <div class="w-3/4 p-10 grid grid-cols-5 gap-2">
-      <div
-        class="w-[220px] h-80 rounded-[15px] shadow border-4 border-[#4da5a5] border-dashed flex flex-col justify-center items-center hover:opacity-60 cursor-pointer"
+      <a
+        class="flex items-center gap-2 mb-4 hover:opacity-75 cursor-pointer"
+        [routerLink]="['troubleshoot']"
       >
-        <img src="../../../assets/svg/plus.svg" alt="" />
+        <img src="../../../assets/svg/setting.svg" alt="" />
         <div
-          class="text-slate-400 text-xl font-bold leading-[30px] tracking-tight"
+          [ngClass]="{ underline: checkLocation('troubleshoot') }"
+          class="text-indigo-700 text-xl font-semibold tracking-tight"
         >
-          New projects
+          Troubleshoot
         </div>
-      </div>
-      <div class="w-[220px] h-80 rounded-[15px] shadow overflow-hidden">
-        <img
-          src="../../../assets/img/home_project.png"
-          alt=""
-          class="w-full h-2/3 object-fill"
-        />
-        <div class="h-1/3 px-4 py-2 flex flex-col justify-between">
-          <div class="text-black text-lg font-bold tracking-tight">
-            Quang’s livingroom
-          </div>
-          <div class="flex gap-2">
-            <div class="w-10 h-10 flex justify-center items-center bg-base rounded-full hover:opacity-75 cursor-pointer">
-              <img src="../../../assets/svg/info.svg" alt="" />
-            </div>
-            <div class="w-10 h-10 flex justify-center items-center bg-base rounded-full hover:opacity-75 cursor-pointer">
-              <img src="../../../assets/svg/share.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+      </a>
+    </div>
+    <div class="ml-[360px] w-3/4 p-10">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

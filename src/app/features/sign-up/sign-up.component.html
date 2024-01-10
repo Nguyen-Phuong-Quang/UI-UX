@@ -15,51 +15,40 @@
         AIAD
       </div>
     </div>
+
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-24"
+      placeholder="Username"
+    />
+    <input
+      class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
       placeholder="Email"
-      [(ngModel)]="email"
     />
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
       placeholder="Password"
       type="password"
-      [(ngModel)]="password"
+    />
+    <input
+      class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
+      placeholder="Confirm password"
+      type="password"
     />
 
-    <div class="flex mt-4 justify-between w-[440px]">
-      <div
-        class="w-[30%] cursor-pointer hover:opacity-70 h-20bg-sky-100 flex justify-center items-center"
-      >
-        <img src="../../../assets/svg/google.svg" alt="" />
-      </div>
-      <div
-        class="w-[30%] cursor-pointer hover:opacity-70 h-20bg-sky-100 flex justify-center items-center"
-      >
-        <img src="../../../assets/svg/facebook.svg" alt="" />
-      </div>
-      <div
-        class="w-[30%] cursor-pointer hover:opacity-70 h-20bg-sky-100 flex justify-center items-center"
-      >
-        <img src="../../../assets/svg/instagram.svg" alt="" />
-      </div>
-    </div>
-
     <div
-      class="w-[197px] h-[72px] bg-indigo-700 rounded-[91px] mt-12 flex justify-center items-center text-white text-2xl hover:opacity-60 cursor-pointer"
-      (click)="handleSignIn()"
-      >
-      Sign in
+      class="w-[197px] h-[72px] bg-indigo-700 rounded-[91px] mt-12 flex justify-center items-center text-white text-2xl"
+    >
+      Sign up
     </div>
 
     <span
       class="text-center text-teal-950 text-2xl font-light leading-[30px] tracking-tight mt-16"
-      >Don’t you have an account?
+      >Already have an account?
       <span
         class="text-indigo-700 text-[28px] font-bold leading-[37px] tracking-tight hover:underline cursor-pointer"
-        (click)="signUp()"
+        (click)="login()"
       >
-        Sign up
+        Sign in
       </span></span
     >
   </div>

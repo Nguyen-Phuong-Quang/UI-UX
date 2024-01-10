@@ -1,0 +1,158 @@
+<div class="fixed top-0 right-0 bottom-0 left-0 pt-[92px] z-40 bg-white">
+  <div
+    class="w-[360px] pt-[92px] bg-[#bfebeb] px-8 flex flex-col justify-between items-center fixed top-0 left-0 bottom-0"
+  >
+    <div
+      class="w-full h-[126px] bg-white rounded-[15px] mt-12 flex justify-between"
+    >
+      <div
+        class="text-indigo-700 text-lg font-medium font-['Nunito Sans'] tracking-tight px-2 py-1"
+      >
+        Describe your design here
+      </div>
+      <img
+        class="w-4 h-4 m-2"
+        src="../../../../../assets/svg/detail_star.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="w-full">
+      <div
+        class="text-indigo-700 text-[28px] font-bold font-['Nunito Sans'] leading-[43px] tracking-tight"
+      >
+        Room Outline
+      </div>
+      <div class="grid grid-cols-3 gap-2">
+        <div
+          class="w-[92px] h-[66px] cursor-pointer bg-white rounded-[15px] flex items-center justify-center p-2"
+        >
+          x
+        </div>
+        <div
+          class="w-[92px] h-[66px] cursor-pointer bg-white rounded-[15px] flex items-center justify-center p-2"
+        >
+          y
+        </div>
+        <div
+          class="w-[92px] h-[66px] cursor-pointer bg-white rounded-[15px] flex items-center justify-center p-2"
+        >
+          z
+        </div>
+      </div>
+      <button
+        class="w-full h-[66px] bg-white text-indigo-700 rounded-[15px] mt-2 flex justify-center items-center hover:bg-indigo-700 hover:text-white"
+      >
+        <span
+          class="text-xl font-bold font-['Nunito Sans'] leading-[33px] tracking-tight"
+        >
+          Upload Room Outline
+        </span>
+      </button>
+    </div>
+
+    <div class="w-full">
+      <div
+        class="text-indigo-700 text-[28px] font-bold font-['Nunito Sans'] leading-[43px] tracking-tight"
+      >
+        Materials
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-4">
+          <div
+            class="w-[140px] h-[140px] rounded-[15px] relative overflow-hidden"
+          >
+            <div
+              class="absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 text-white left-0 p-2">Table</div>
+            <img class="" src="../../../../../assets/img/detail_1.png" alt="" />
+          </div>
+          <div
+            class="w-[140px] h-[140px] rounded-[15px] relative overflow-hidden"
+          >
+            <div
+              class="absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 text-white left-0 p-2">Chair</div>
+            <img src="../../../../../assets/img/detail_3.png" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div
+            class="w-[140px] h-[140px] rounded-[15px] relative overflow-hidden"
+          >
+            <div
+              class="absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 text-white left-0 p-2">Plant</div>
+            <img src="../../../../../assets/img/detail-2.png" alt="" />
+          </div>
+          <div
+            class="w-[140px] h-[140px] rounded-[15px] relative overflow-hidden"
+          >
+            <div
+              class="absolute right-0 left-0 top-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent"
+            ></div>
+            <div class="absolute bottom-0 text-white left-0 p-2">More</div>
+            <img src="../../../../../assets/img/detail_4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex items-center gap-2 mb-4 hover:opacity-75 cursor-pointer w-full"
+    >
+      <img src="../../../../../assets/svg/setting.svg" alt="" />
+      <div class="text-indigo-700 text-xl font-semibold tracking-tight">
+        Troubleshoot
+      </div>
+    </div>
+  </div>
+  <div class="w-full h-full ml-[360px]" *ngIf="id">
+    <div class="w-full h-full relative">
+      <div class="absolute left-0 top-0 flex bg-base py-4 px-8 gap-12">
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_1.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_2.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_3.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_4.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_5.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_6.svg"
+          alt=""
+        />
+        <img
+          class="hover:opacity-50 cursor-pointer"
+          src="../../../../../assets/svg/tool_7.svg"
+          alt=""
+        />
+      </div>
+      <img
+        class="object-fill w-[1560px] h-full"
+        src="../../../../../assets/img/house.png"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

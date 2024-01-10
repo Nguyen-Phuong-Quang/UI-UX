@@ -13,11 +13,13 @@
     <div class="flex items-center pr-8">
       <div
         class="text-indigo-700 text-2xl font-normal font-['Nunito Sans'] leading-[33px] tracking-tight mr-8 cursor-pointer hover:opacity-60"
+        (click)="signIn()"
       >
         Sign in
       </div>
       <div
         class="w-[164px] h-[54px] bg-indigo-700 rounded-[15px] text-2xl text-white flex justify-center items-center cursor-pointer hover:opacity-60"
+        (click)="signUp()"
       >
         Sign up
       </div>
@@ -84,7 +86,11 @@
         </div>
       </div>
 
-      <div class="w-[480px] h-[72px] bg-indigo-700 rounded-[91px] flex justify-center items-center text-white font-bold text-4xl mt-12">Sign up now!</div>
+      <div
+        class="w-[480px] h-[72px] bg-indigo-700 rounded-[91px] flex justify-center items-center text-white font-bold text-4xl mt-12"
+      >
+        Sign up now!
+      </div>
     </div>
   </div>
   <div class="w-1/4 h-screen">
