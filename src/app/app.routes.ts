@@ -8,6 +8,8 @@ import { InspirationComponent } from './features/home/inspiration/inspiration.co
 import { ProvideFeedbackComponent } from './features/home/provide-feedback/provide-feedback.component';
 import { ProjectDetailComponent } from './features/home/my-projects/project-detail/project-detail.component';
 import { TroubleshootComponent } from './features/home/troubleshoot/troubleshoot.component';
+import { TroubleshootSolutionComponent } from './features/home/troubleshoot-solution/troubleshoot-solution.component';
+import { TroubleshootSuccessComponent } from './features/home/troubleshoot-success/troubleshoot-success.component';
 
 export const routes: Routes = [
   {
@@ -45,6 +47,14 @@ export const routes: Routes = [
       {
         path: 'troubleshoot',
         component: TroubleshootComponent,
+      },
+      {
+        path: 'troubleshoot/solution/:id',
+        component: TroubleshootSolutionComponent,
+      },
+      {
+        path: 'troubleshoot/solution/:issue/success/:solution',
+        component: TroubleshootSuccessComponent,
       },
       {
         path: 'provide-feedback',

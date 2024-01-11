@@ -19,27 +19,32 @@
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-24"
       placeholder="Username"
+      [(ngModel)]="username"
     />
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
       placeholder="Email"
+      [(ngModel)]="email"
     />
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
       placeholder="Password"
       type="password"
+      [(ngModel)]="password"
     />
     <input
       class="w-[440px] h-16 bg-base rounded-[15px] px-6 text-2xl focus:outline-none mt-4"
       placeholder="Confirm password"
       type="password"
+      [(ngModel)]="confirmPassword"
     />
 
-    <div
-      class="w-[197px] h-[72px] bg-indigo-700 rounded-[91px] mt-12 flex justify-center items-center text-white text-2xl"
+    <button
+      (click)="handleSubmit()"
+      class="w-[197px] h-[72px] bg-indigo-700 rounded-[91px] mt-12 flex justify-center items-center text-white text-2xl hover:opacity-50"
     >
       Sign up
-    </div>
+    </button>
 
     <span
       class="text-center text-teal-950 text-2xl font-light leading-[30px] tracking-tight mt-16"

@@ -18,8 +18,18 @@ export class LoginComponent {
   }
 
   handleSignIn() {
-    if (this.email === 'quang29112002' && this.password === '123456') {
-      this.router.navigate(['home']);
+    if (localStorage.getItem('accounts')) {
+      const accounts = JSON.parse(localStorage.getItem('accounts') as string);
+
+      const success = accounts.find(
+        (acc: any) => acc.email === this.email && acc.password === this.password
+      );
+
+      if (success) {
+        this.router.navigate(['home']);
+      } else {
+        alert('Wrong credential!');
+      }
     }
   }
 }

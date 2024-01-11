@@ -104,9 +104,12 @@
       class="flex items-center gap-2 mb-4 hover:opacity-75 cursor-pointer w-full"
     >
       <img src="../../../../../assets/svg/setting.svg" alt="" />
-      <div class="text-indigo-700 text-xl font-semibold tracking-tight">
+      <button
+        (click)="openTroubleShoot()"
+        class="text-indigo-700 text-xl font-semibold tracking-tight hover:underline cursor-pointer"
+      >
         Troubleshoot
-      </div>
+      </button>
     </div>
   </div>
   <div class="w-full h-full ml-[360px]" *ngIf="id">

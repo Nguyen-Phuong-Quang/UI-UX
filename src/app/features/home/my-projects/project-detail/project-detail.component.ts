@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-detail',
@@ -10,8 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjectDetailComponent implements OnInit {
   id: string | null = '';
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
+  }
+
+  openTroubleShoot() {
+    this.router.navigate(['home', 'troubleshoot']);
   }
 }

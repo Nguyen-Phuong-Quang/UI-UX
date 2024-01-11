@@ -1,0 +1,40 @@
+<div class="py-32 px-20 flex flex-col items-center relative h-[600px]">
+  <div
+    class="text-gray-950 text-[40px] font-bold font-['Nunito Sans'] leading-[50px] tracking-tight w-full"
+  >
+    {{ title }}
+  </div>
+
+  <div class="w-full mt-8 flex gap-4">
+    <img src="../../../../assets/svg/success.svg" alt="" />
+    <div>
+      <div
+        class="text-indigo-700 text-[32px] font-bold font-['Nunito Sans'] leading-[30px] tracking-tight"
+      >
+        SUCCESS
+      </div>
+      <div
+        class="text-gray-950 text-2xl font-semibold font-['Nunito Sans'] leading-[30px] tracking-tight"
+      >
+        Success message.
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="w-full mt-12 flex flex-row-reverse items-center gap-6 absolute bottom-0"
+  >
+    <button
+      (click)="handleFinish()"
+      class="w-[173.71px] h-[47px] bg-indigo-700 rounded-[100px] text-white flex justify-center items-center font-semibold cursor-pointer hover:opacity-50"
+    >
+      Finish
+    </button>
+
+    <button
+      class="w-[173.71px] h-[47px] border border-indigo-700 rounded-[100px] text-indigo-700 flex justify-center items-center font-semibold cursor-pointer hover:opacity-50"
+    >
+      RESTART TO APPLY
+    </button>
+  </div>
+</div>
